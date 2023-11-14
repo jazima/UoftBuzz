@@ -1,0 +1,17 @@
+# Command to install
+# pip install -r requirements.txt    
+
+# This file may be used to create an environment using:
+flask
+flask_bootstrap
+flask_moment
+flask_wtf
+itsdangerous
+jinja2
+werkzeug
+flask_sqlalchemy
+flask_jwt_extended
+pytest
+# In case there are errors on windows use werkzeug--2.0.3
+wtforms
+email_validator

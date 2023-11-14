@@ -1,0 +1,34 @@
+venv
+__pycache__
+#-------- flask-api --------
+flask-api/venv
+flask-api/__pycache__
+flask-api/data.sqlite
+flask-api/instance
+
+#-------- react-frontend --------
+
+# dependencies
+react-frontend/node_modules
+react-frontend/.pnp
+.pnp.js
+
+# testing
+react-frontend/coverage
+
+# production
+react-frontend/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#-------- VSC --------
+.vscode

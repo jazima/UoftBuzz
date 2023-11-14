@@ -1,0 +1,197 @@
+{
+    "users":
+    [
+        {
+            "username": "userone",
+            "email": "userone@mail.com",
+            "password": "password1",
+            "firstName": "User",
+            "lastName": "One",
+            "interests": ["Fun", "Athletics", "Food"],
+            "description":"User One: When he was nearly thirteen, my brother Jem got his arm badly broken at the elbow. When it healed, and Jem’s fears of never being able to play football were assuaged, he was seldom self-conscious about his injury. His left arm was somewhat shorter than his right; when he stood or walked, the back of his hand was at right angles to his body, his thumb parallel to his thigh. He couldn’t have cared less, so long as he could pass and punt."
+        },
+        {
+            "firstName": "User",
+            "lastName": "Two",
+            "username": "usertwo",
+            "email": "usertwo@mail.com",
+            "password": "password2",
+            "interests": ["Philosophy", "Cultural", "Health"],
+            "description":"User Two: When enough years had gone by to enable us to look back on them, we sometimes discussed the events leading to his accident. I maintain that the Ewells started it all, but Jem, who was four years my senior, said it started long before that. He said it began the summer Dill came to us, when Dill first gave us the idea of making Boo Radley come out."
+        },
+        {
+            "firstName": "User",
+            "lastName": "Three",
+            "username": "userthree",
+            "email": "userthree@mail.com",
+            "password": "password3",
+            "interests": ["Freshman", "Dance", "Theatre"],
+            "description":"User Three: Being Southerners, it was a source of shame to some members of the family that we had no recorded ancestors on either side of the Battle of Hastings. All we had was Simon Finch, a fur-trapping apothecary from Cornwall whose piety was exceeded only by his stinginess. In England, Simon was irritated by the persecution of those who called themselves Methodists at the hands of their more liberal brethren, and as Simon called himself a Methodist, he worked his way across the Atlantic to Philadelphia, thence to Jamaica, thence to Mobile, and up the Saint Stephens."
+        },
+        {
+            "firstName": "User",
+            "lastName": "Four",
+            "username": "userfour",
+            "email": "userfour@mail.com",
+            "password": "password4",
+            "interests": ["Workshop", "Volunteering", "Networking"],
+            "description":"User Four: Mindful of John Wesley’s strictures on the use of many words in buying and selling, Simon made a pile practicing medicine, but in this pursuit he was unhappy lest he be tempted into doing what he knew was not for the glory of God, as the putting on of gold and costly apparel. So Simon, having forgotten his teacher’s dictum on the possession of human chattels, bought three slaves and with their aid established a homestead on the banks of the Alabama River some forty miles above Saint Stephens."
+        },
+        {
+            "firstName": "User",
+            "lastName": "Five",
+            "username": "userfive",
+            "email": "userfive@mail.com",
+            "password": "password5",
+            "interests": ["Community", "Music", "Social"],
+            "description":"User Five: Simon would have regarded with impotent fury the disturbance between the North and the South, as it left his descendants stripped of everything but their land, yet the tradition of living on the land remained unbroken until well into the twentieth century, when my father, Atticus Finch, went to Montgomery to read law, and his younger brother went to Boston to study medicine."
+        },
+        {
+            "firstName": "John",
+            "lastName": "Doe",
+            "username": "johndoe",
+            "email": "johndoe@mail.com",
+            "password": "123456",
+            "interests": ["Lecture", "Diversity", "Environmental"],
+            "description": "I'm John Doe. I study computer engineering at UofT and I love to play soccer and basketball. I'm looking for a partner to play soccer with me at the Varsity Centre. I'm available on Mondays, Wednesdays, and Fridays from 5pm to 7pm."
+        },
+        {
+            "firstName": "Bilal",
+            "lastName": "Bilal",
+            "username": "bilalbilal",
+            "email": "bilalbilal@uoft.com",
+            "password": "bilaliscool",
+            "interests": ["Dance", "Food", "Environmental"],
+            "description": "I'm Bilal Bilal. I study anthropology at UofT. I love cooking, reading, and playing soccer. I'm looking to get involved in clubs and events at UofT and get to know more people."
+        },
+        {
+            "firstName": "Jane",
+            "lastName": "Smith",
+            "username": "janesmith",
+            "email": "janesmith@mail.com",
+            "password": "abcdef",
+            "interests": ["Performance", "Networking", "Music"],
+            "description": "I'm Jane Smith. I study biology at UofT and I love to play tennis and read books. I'm looking for a study group for my biology class. I'm available on Tuesdays and Thursdays from 3pm to 5pm."
+        }
+    ],
+    "events":
+    [
+        {
+            "username": "johndoe",
+            "password": "123456",
+            "email": "johndoe@mail.com",
+            "title": "Soccer at Varsity Centre",
+            "description": "Join us for a friendly game of soccer at the Varsity Centre. All skill levels are welcome. Don't forget to bring your own water bottle!",
+            "location": "Varsity Centre",
+            "date": "2019-11-01",
+            "startTime": "17:00",
+            "endTime": "19:00",
+            "tags": ["Athletics", "Health"],
+            "website": "https://www.varsitycentre.ca/"
+        },
+        {
+            "username": "bikakbilal",
+            "password": "bilaliscool",
+            "email": "bilalbilal@uoft.com",
+            "title": "Study Group for BIO120",
+            "description": "Join us for a study group session for BIO120 at Robarts Library. Bring your notes and questions. Let's ace this class together!",
+            "location": "Robarts Library",
+            "date": "2019-11-02",
+            "startTime": "15:00",
+            "endTime": "17:00",
+            "tags": ["Academic", "Freshman"],
+            "website": "https://onesearch.library.utoronto.ca/robarts"
+        },
+        {
+            "username": "janesmith",
+            "password": "abcdef",
+            "email": "janesmith@mail.com",
+            "title": "Cooking Club",
+            "description": "Get together with other students to cook and eat delicious food!",
+            "location": "Bahen Centre",
+            "date": "2019-11-03",
+            "startTime": "18:00",
+            "endTime": "20:00",
+            "tags": ["Food", "Social"],
+            "website": "https://www.bahen.utoronto.ca/"
+        },
+        {
+            "username": "userfive",
+            "password": "password5",
+            "email": "userfive@mail.com",
+            "title": "Coding Workshop",
+            "description": "Join us for a coding workshop at the Computer Science Building. We'll be learning about web development using JavaScript. All skill levels are welcome!",
+            "location": "Computer Science Building",
+            "date": "2019-11-04",
+            "startTime": "16:00",
+            "endTime": "18:00",
+            "tags": ["Workshop", "Networking"],
+            "website": "https://web.cs.toronto.edu/"
+        },
+        {
+            "username": "userfour",
+            "password": "password4",
+            "email": "userfour@mail.com",
+            "title": "Yoga Class",
+            "description": "Come relax and stretch at our yoga class in the Athletic Centre. Don't forget to bring your own yoga mat!",
+            "location": "Athletic Centre",
+            "date": "2019-11-05",
+            "startTime": "19:00",
+            "endTime": "21:00",
+            "tags": ["Health", "Social"],
+            "website": "https://kpe.utoronto.ca/athletics-centre"
+        },
+        {
+            "username": "userthree",
+            "password": "password3",
+            "email": "userthree@mail.com",
+            "title": "Book Club Meeting",
+            "description": "Join us for our monthly book club meeting at the Hart House Library. This month, we're discussing 'To Kill a Mockingbird'.",
+            "location": "Hart House Library",
+            "date": "2019-11-06",
+            "startTime": "17:00",
+            "endTime": "19:00",
+            "tags": ["Social", "Fun"],
+            "website": "https://harthouse.ca/"
+        },
+        {
+            "username": "usertwo",
+            "password": "password2",
+            "email": "usertwo@mail.com",
+            "title": "Photography Club Meeting",
+            "description": "Join us for our weekly photography club meeting at the Sidney Smith Hall. We'll be discussing different photography techniques and reviewing each other's work.",
+            "location": "Sidney Smith Hall",
+            "date": "2019-11-07",
+            "startTime": "18:00",
+            "endTime": "20:00",
+            "tags": ["Arts", "Workshop"],
+            "website": "https://www.artsci.utoronto.ca/current/academics/photography"
+        },
+        {
+            "username": "userone",
+            "password": "password1",
+            "email": "userone@mail.com",
+            "title": "Chess Tournament",
+            "description": "Come show off your chess skills at our chess tourtitlent in the Hart House. All skill levels are welcome!",
+            "location": "Hart House",
+            "date": "2019-11-08",
+            "startTime": "19:00",
+            "endTime": "21:00",
+            "tags": ["Fun", "Social"],
+            "website": "https://harthouse.ca/"
+        },
+        {
+            "username": "userone",
+            "password": "password1",
+            "email": "userone@mail.com",
+            "title": "Film Screening",
+            "description": "Join us for a film screening at the Innis Town Hall. We'll be watching 'The Shawshank Redemption'.",
+            "location": "Innis Town Hall",
+            "date": "2019-11-09",
+            "startTime": "20:00",
+            "endTime": "22:00",
+            "tags": ["Theatre", "Performance"],
+            "website": "https://townhall.innis.utoronto.ca/"
+        }
+    ]
+}

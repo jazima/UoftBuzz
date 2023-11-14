@@ -1,0 +1,3 @@
+### Side Note
+
+To further structure this, could create subfolders for css, js, images...
