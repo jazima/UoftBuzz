@@ -15,3 +15,4 @@ pytest
 # In case there are errors on windows use werkzeug--2.0.3
 wtforms
 email_validator
+gunicorn
