@@ -206,7 +206,7 @@ def get_all_tags():
 @event_detail_app.route('/IMAGES/<asset_name>', methods=['GET']) # Maybe depreciate this later? Not too sure what the frontend wants
 def get_asset(asset_name):
     try:
-        return send_from_directory("../IMAGES", asset_name) # Temporary solution. Need to figure out how to serve static files
+        return send_from_directory("/opt/render/project", asset_name) # Temporary solution. Need to figure out how to serve static files
     except FileNotFoundError:
         abort(404)
 
