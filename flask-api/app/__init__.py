@@ -1,11 +1,11 @@
 import json
-from flask import Flask
+from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_jwt_extended import JWTManager
 from datetime import date, time
 
 app = Flask(__name__)
-app.config.from_object('config.DevelopmentConfig') # Refer to config.py 
+app.config.from_object('config.ProductionConfig') # Refer to config.py 
 
 db = SQLAlchemy(app)
 jwt = JWTManager(app)
@@ -134,9 +134,7 @@ with app.app_context():
     db.create_all() # Create all tables in the database in case they don't exist
     add_demo_events(db)
 
-# Temporary route [Could remove now if wanted]
-import time
-@app.route('/time')
-def get_current_time():
-    return {'time': time.time()}
+@app.route('/')
+def home():
+    return render_template('index.html')
     
