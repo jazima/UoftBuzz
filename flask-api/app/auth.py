@@ -64,8 +64,8 @@ def register():
         file = request.files['image']
         if file and not(file.filename == ''):
             filename = secure_filename(file.filename) # Need to generate unique filename for every image uploaded
-            file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            image_url = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+            file.save(os.path.join('/opt/render/project', filename))
+            image_url = os.path.join('/opt/render/project', filename)
         else:
             image_url = None
     else:
