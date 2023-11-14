@@ -1,1 +1,0 @@
-from app.routes.event_detail import event_detail_app

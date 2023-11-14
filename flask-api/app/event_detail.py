@@ -4,7 +4,7 @@ from werkzeug.utils import secure_filename
 import os
 import json
 import datetime
-from app.models import db, User, Event, Tag
+from models import db, User, Event, Tag
 from app import app
 
 event_detail_app = Blueprint('event_detail_app',__name__)

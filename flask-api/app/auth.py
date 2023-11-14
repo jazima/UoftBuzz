@@ -7,7 +7,7 @@ import os
 import json
 
 from app import app, db
-from app.models import User
+from models import User
 
 auth_blueprint = Blueprint('auth_blueprint', __name__)
 

@@ -3,8 +3,8 @@ from flask_jwt_extended import jwt_required, get_jwt_identity
 import json
 
 from app import db
-from app.models import User, Tag, Event
-from app.routes.event_detail import event_to_dict
+from models import User, Tag, Event
+from event_detail import event_to_dict
 
 profile_blueprint = Blueprint('profile', __name__)
 

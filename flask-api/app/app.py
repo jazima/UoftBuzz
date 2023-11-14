@@ -11,16 +11,16 @@ db = SQLAlchemy(app)
 jwt = JWTManager(app)
 
 # Import routes and models
-from app.routes import event_detail_app
+from event_detail import event_detail_app
 app.register_blueprint(event_detail_app)
 
-from app.routes.auth import auth_blueprint
+from auth import auth_blueprint
 app.register_blueprint(auth_blueprint) # Could add url_prefix='/auth' to this line depends on what frontend prefers
 
-from app.routes.profile import profile_blueprint
+from profile import profile_blueprint
 app.register_blueprint(profile_blueprint, url_prefix='/profile')
 
-from app.models import Event, Tag
+from models import Event, Tag
 
 def add_demo_events(db):
     demo_event1 = Event(
