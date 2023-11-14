@@ -203,7 +203,7 @@ def get_all_tags():
     tags = [tag.name for tag in tags]
     return jsonify({"tags": tags}), 200
 
-@event_detail_app.route('/IMAGES/<asset_name>', methods=['GET']) # Maybe depreciate this later? Not too sure what the frontend wants
+@event_detail_app.route('/opt/render/project/<asset_name>', methods=['GET']) # Maybe depreciate this later? Not too sure what the frontend wants
 def get_asset(asset_name):
     try:
         return send_from_directory("/opt/render/project", asset_name) # Temporary solution. Need to figure out how to serve static files
