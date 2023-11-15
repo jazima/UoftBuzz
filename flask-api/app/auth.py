@@ -5,6 +5,7 @@ from flask_jwt_extended import jwt_required, create_access_token, get_jwt_identi
 from werkzeug.utils import secure_filename
 import os
 import json
+from datetime import timedelta
 
 from app import app, db
 from models import User
@@ -20,7 +21,7 @@ def login():
     if not user or not check_password_hash(user.password, password):
         return jsonify({'message': 'Invalid email or password'}), 401
     # NOTE: Token has an expiry time, currently we do not check or refresh the token, something to address later
-    access_token = create_access_token(identity=user.id) # I read somewhere that turning identity to a str may be a good idea i.e. str(user.id) but may not be neccessary
+    access_token = create_access_token(identity=user.id, expires_delta=timedelta(minutes=30)) # I read somewhere that turning identity to a str may be a good idea i.e. str(user.id) but may not be neccessary
     return jsonify({'message': 'Logged in successfully', 'token' : access_token, 'userID' : user.id}), 200
 
 @auth_blueprint.route('/register', methods=['POST'])

@@ -82,9 +82,9 @@ def create_event():
         image_url = None
    
     date = datetime.date(int(data['date'][:4]), int(data['date'][5:7]), int(data['date'][8:10]))
-    if data.get("startTime"): start_time = datetime.time(int(data['startTime'])//3600000, int(data['startTime'])//600000 % 60)
+    if data.get("startTime"): start_time = datetime.time(int(data['startTime'])//3600000, int(data['startTime'])//60000 % 60)
     else: start_time = None
-    if data.get("endTime"): end_time = datetime.time(int(data['endTime'])//3600000, int(data['endTime'])//600000 % 60)
+    if data.get("endTime"): end_time = datetime.time(int(data['endTime'])//3600000, int(data['endTime'])//60000 % 60)
     else: end_time = None
     if(data.get('tags')): tags = json.loads(data['tags'])
     else: tags = None
